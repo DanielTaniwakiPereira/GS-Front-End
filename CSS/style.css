@@ -1,7 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital@0;1&family=Quicksand:wght@300..700&family=Share+Tech&display=swap');
+
+:root {
+  --spacing-sm: 10px;
+  --spacing-md: 20px;
+  --spacing-lg: 40px
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-family: "Quicksand", sans-serif;;
+  scroll-behavior: smooth;
 }
 
 ul, ol {
@@ -11,6 +24,18 @@ ul, ol {
 a {
   text-decoration: none;
   color: #ffffff;
+}
+
+a:hover {
+  color: #73A942;
+}
+
+li {
+  transition: 0.5s;
+}
+
+li:hover {
+  scale: 1.1;
 }
 
 .box {
@@ -33,6 +58,7 @@ a {
 }
 
 .header-hero {
+  font-size: var(--spacing-md);
   padding: 20px;
   height: 100px;
   display: flex;
@@ -54,13 +80,16 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
+  text-wrap: balance;
+  font-size: 40px;
 }
 
 .problema {
   color: #ffffff;
   text-align: center;
   padding: 20px;
-  background-color: #000000;
+  background-color: #143601;
+  font-size: var(--spacing-md);
 }
 
 .problema-texto {
@@ -68,4 +97,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-wrap: balance;
+  font-size: var(--spacing-lg);
 }
