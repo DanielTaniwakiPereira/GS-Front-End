@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital@0;1&family=Quicksand:wght@300..700&family=Share+Tech&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital@0;1&family=Quicksand:wght@300..700&family=Share+Tech&display=swap");
 
 :root {
   --spacing-sm: 10px;
   --spacing-md: 20px;
-  --spacing-lg: 40px
+  --spacing-lg: 40px;
 }
 
 * {
@@ -13,11 +13,12 @@
 }
 
 html {
-  font-family: "Quicksand", sans-serif;;
+  font-family: "Quicksand", sans-serif;
   scroll-behavior: smooth;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -27,7 +28,7 @@ a {
 }
 
 a:hover {
-  color: #73A942;
+  color: #73a942;
 }
 
 li {
@@ -44,17 +45,14 @@ li:hover {
 
 .hero {
   color: #ffffff;
-   background-image: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.4)
-    ),
+  background-image:
+    linear-gradient(
+    to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
     url(../images/agricultura.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: var(--height-full);
 }
 
 .header-hero {
@@ -88,7 +86,14 @@ li:hover {
   color: #ffffff;
   text-align: center;
   padding: 20px;
-  background-color: #143601;
+  background-image:
+    linear-gradient(
+    to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url(../images/problemas.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   font-size: var(--spacing-md);
 }
 
@@ -99,4 +104,144 @@ li:hover {
   justify-content: center;
   text-wrap: balance;
   font-size: var(--spacing-lg);
+}
+
+.tecnologia {
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  background-image:
+    linear-gradient(
+    to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url(../images/satelite.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-size: var(--spacing-md);
+}
+
+.tecnologia-texto {
+  height: calc(100dvh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-wrap: balance;
+  font-size: var(--spacing-lg);
+}
+
+.objetivos {
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  background-image:
+    linear-gradient(
+    to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url(../images/agricultores.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-size: var(--spacing-md);
+}
+
+.objetivos-texto {
+  height: calc(100dvh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-wrap: balance;
+  font-size: var(--spacing-lg);
+}
+
+.publico {
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  background-image:
+    linear-gradient(
+    to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url(../images/publico.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-size: var(--spacing-md);
+}
+
+.publico-texto {
+  height: calc(100dvh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-wrap: balance;
+  font-size: var(--spacing-lg);
+}
+
+.beneficios {
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  background-color: #538D22;
+  font-size: var(--spacing-md);
+}
+
+.beneficios-itens {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: calc(100dvh - 100px);
+}
+
+.beneficios-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: var(--spacing-md);
+  width: 20%;
+  height: 60%;
+  border: 1px solid ;
+  box-shadow: inset 1px 1px 10px #ffffff;
+  animation: viewAnimation both;
+  animation-timeline: view(70% 20%);
+  text-wrap: balance;
+}
+
+.beneficios-item:hover {
+  scale: 1.1;
+}
+
+.beneficios-item img {
+  height: 60%;
+  width: 90%;
+}
+
+.aplicacoes {
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  background-color: #538D22;
+  font-size: var(--spacing-md);
+}
+
+.aplicacoes-texto {
+  height: calc(100dvh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-wrap: balance;
+  font-size: var(--spacing-lg);
+}
+
+@keyframes viewAnimation {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
