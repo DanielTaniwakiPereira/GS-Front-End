@@ -104,6 +104,8 @@ li:hover {
   justify-content: center;
   text-wrap: balance;
   font-size: var(--spacing-lg);
+  animation: viewAnimation both;
+  animation-timeline: view(70% 20%);
 }
 
 .tecnologia {
@@ -128,6 +130,8 @@ li:hover {
   justify-content: center;
   text-wrap: balance;
   font-size: var(--spacing-lg);
+  animation: viewAnimation both;
+  animation-timeline: view(70% 20%);
 }
 
 .objetivos {
@@ -152,6 +156,8 @@ li:hover {
   justify-content: center;
   text-wrap: balance;
   font-size: var(--spacing-lg);
+  animation: viewAnimation both;
+  animation-timeline: view(70% 20%);
 }
 
 .publico {
@@ -176,13 +182,15 @@ li:hover {
   justify-content: center;
   text-wrap: balance;
   font-size: var(--spacing-lg);
+  animation: viewAnimation both;
+  animation-timeline: view(70% 20%);
 }
 
 .beneficios {
   color: #ffffff;
   text-align: center;
   padding: 20px;
-  background-color: #538D22;
+  background-color: #245501;
   font-size: var(--spacing-md);
 }
 
@@ -222,7 +230,7 @@ li:hover {
   color: #ffffff;
   text-align: center;
   padding: 20px;
-  background-color: #538D22;
+  background-color: #245501;
   font-size: var(--spacing-md);
 }
 
@@ -233,6 +241,8 @@ li:hover {
   justify-content: center;
   text-wrap: balance;
   font-size: var(--spacing-lg);
+  animation: viewAnimation both;
+  animation-timeline: view(70% 20%);
 }
 
 @keyframes viewAnimation {
